@@ -10,11 +10,6 @@
   <!-- Le styles -->
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-  
-      <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-    <link href="grid.css" rel="stylesheet">
   <style>
 
     /* GLOBAL STYLES
@@ -29,13 +24,14 @@
 
 
     /* CUSTOMIZE THE NAVBAR-------------------------------------------------- */
-    .navbar-default {
+    .navbar-wrapper {
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
       z-index: 10;
-      margin-top: 0px;
-      margin-bottom: 0px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
     .navbar-wrapper .navbar {
     }
@@ -66,58 +62,12 @@
       margin-top: 10px;
     }
 
-    /* CUSTOMIZE THE CAROUSEL-------------------------------------------------- */
-    .carousel {
-	  margin-top: 50px;
-      margin-bottom: 60px;
-    }
-
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
-
-    .carousel-control {
-      height: 80px;
-      margin-top: 20px;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 2px 2px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
     /* MARKETING CONTENT -------------------------------------------------- */
     /* Center align the text within the three columns below the carousel */
+	.marketing {
+		margin-top: 60px;
+	}
+	
     .marketing .span4 {
       text-align: center;
     }
@@ -173,10 +123,6 @@
         border-radius: 0;
         margin: -20px 0;
       }
-	  
-	  .carousel {
-		  margin-top: 20px
-	  }
 
       .carousel .item {
         height: 500px;
@@ -205,33 +151,7 @@
       .navbar-inner {
         margin: -20px;
       }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
+	  
       .marketing .span4 + .span4 {
         margin-top: 40px;
       }
@@ -280,11 +200,11 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="About.html">About</a></li>
-                <!--<li><a href="Vehicles.html">Vehicles</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>-->
-                <li><a href="Sponsors.html">Sponsors</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>-->
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div> <!-- /.container -->
@@ -293,70 +213,37 @@
     </div><!-- /.navbar-wrapper -->
 
 
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="Images/Sponsors/Hex-Water3_zps71897dbd.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Welcome!</h1>
-              <p class="lead">The Underwater Robotics Team at The Ohio State University Welcomes You!</p>
-            </div>
-          </div>
+<div class="container marketing">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, comments, or concerns feel free to email us. We'd love to hear from you!</p>
+          <p>Email: <a href="mailto:uwrt.osu@gmail.com">uwrt.osu@gmail.com</a></p>
         </div>
-        <div class="item">
-          <img src="Images/Sponsors/Hex-Water1_zps4a5919b9.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Competition</h1>
-              <p class="lead">The Underwater Robotics Team is hard at work designing both a Remotely Operated Vehicle (ROV) as well as a fully Autonomous Vehicle (AUV) for competitions across North America.</p>
-              <a class="btn btn-large btn-primary" href="About.html">Learn more</a>
-            </div>
-          </div>
+        <hr width="200" align="left">
+         <div class="col-md-4">
+          <h2>Other Media</h2>
+          <p>Be sure to check out our other forms of media!</p>
+          <p>Facebook: <a href="https://www.facebook.com/UnderwaterRoboticsAtOhioState" target="_blank">Underwater Robotics at Ohio State</a></p>
         </div>
-        <div class="item">
-          <img src="Images/Sponsors/Hex-Water2_zps4fd4bcc9.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Like what you see?</h1>
-              <p class="lead">Feel free to contact us regarding any comments, questions, or concerns you may have!</p>
-              <a class="btn btn-large btn-primary" href="Contact.html">Contact Us</a>
-            </div>
-          </div>
+        <hr width="200" align="left">
+        <div class="col-md-4">
+          <h2>Donations</h2>
+          <p>If you find yourself compelled to help make our ambitions become a reality and would like to donate you can do so in one of the following ways...</p>
+          <p>Online: <a href="https://www.giveto.osu.edu/igive/OnlineGiving/index.aspx?Source_Code=WA" target="_blank">Donate Here</a></p>
+          <p><li>Search "Underwater Robotics"</li>
+          <li>Fund #313589</li></p>
+          <p>Check: </p>
+          <p><li>Make Checks Payable to: The Ohio State University</li>
+          <li>In the memo line, specify "Underwater Robotics Team"</li></p>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-
-
-
-
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>2014-2015 Season is Underway!</h2>
-          <p>The UWRT is hard at work, coming together as groups 3 times a week, designing the next batch of robots that includes both a Remotely Operated Vehicle (ROV) and an Autonomous Unmanned Vehicle (AUV). We welcome our newest members who have shown great ambition and willingness to learn. We are still actively accepting members though our main recruitment efforts have come to a close. If you are a current student at The Ohio State University and find yourself interested in joining this fantastic team, feel free to <a href="Contact.html">contact us</a> with your inquries.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h2>New Website</h2>
-          <p>We have just implemented a new website format for the UWRT. We are always striving to follow a path of excellence so we will continue to update and better the website. If you have any suggestions or reccomendations, again feel free to <a href="Contact.html">contact us</a>.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Underwater Robotics at The Ohio State University &middot; <a href="Privacy.html">Privacy</a> &middot; <a href="Terms.html">Terms</a></p>
+        <p>&copy; 2015 Underwater Robotics at The Ohio State University &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -370,18 +257,5 @@
       }(window.jQuery)
     </script>
     <script src="bootstrap/js/holder/holder.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/docs.min.js"></script>
-       
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    
   </body>
 </html>

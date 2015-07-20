@@ -64,10 +64,6 @@
 
     /* MARKETING CONTENT -------------------------------------------------- */
     /* Center align the text within the three columns below the carousel */
-	.marketing {
-		margin-top: 60px;
-	}
-	
     .marketing .span4 {
       text-align: center;
     }
@@ -186,10 +182,12 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-          <div class="container">
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -200,50 +198,25 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="About.html">About</a></li>
-                <!--<li><a href="Vehicles.html">Vehicles</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>-->
-                <li><a href="Sponsors.html">Sponsors</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div><!--/.nav-collapse -->
-          </div> <!-- /.container -->
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
     </div><!-- /.navbar-wrapper -->
 
 
-<div class="container marketing">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Contact Us</h2>
-          <p>If you have any questions, comments, or concerns feel free to email us. We'd love to hear from you!</p>
-          <p>Email: <a href="mailto:uwrt.osu@gmail.com">uwrt.osu@gmail.com</a></p>
-        </div>
-        <hr width="200" align="left">
-         <div class="col-md-4">
-          <h2>Other Media</h2>
-          <p>Be sure to check out our other forms of media!</p>
-          <p>Facebook: <a href="https://www.facebook.com/UnderwaterRoboticsAtOhioState" target="_blank">Underwater Robotics at Ohio State</a></p>
-        </div>
-        <hr width="200" align="left">
-        <div class="col-md-4">
-          <h2>Donations</h2>
-          <p>If you find yourself compelled to help make our ambitions become a reality and would like to donate you can do so in one of the following ways...</p>
-          <p>Online: <a href="https://www.giveto.osu.edu/igive/OnlineGiving/index.aspx?Source_Code=WA" target="_blank">Donate Here</a></p>
-          <p><li>Search "Underwater Robotics"</li>
-          <li>Fund #313589</li></p>
-          <p>Check: </p>
-          <p><li>Make Checks Payable to: The Ohio State University</li>
-          <li>In the memo line, specify "Underwater Robotics Team"</li></p>
-        </div>
-      </div>
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Underwater Robotics at The Ohio State University &middot; <a href="Privacy.html">Privacy</a> &middot; <a href="Terms.html">Terms</a></p>
+        <p>&copy; 2015 Underwater Robotics at The Ohio State University &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
