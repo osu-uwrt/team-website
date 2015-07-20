@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Underwater Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Le styles -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR-------------------------------------------------- */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+    /* MARKETING CONTENT -------------------------------------------------- */
+    /* Center align the text within the three columns below the carousel */
+	.marketing {
+		  margin-top: 60px;
+	  }
+	  
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    /* Featurettes ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 200;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+	   
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+  <script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="home.html">Underwater Robotics</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="About.html">About</a></li>
+                <!--<li><a href="Vehicles.html">Vehicles</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>-->
+                <li><a href="Sponsors.html">Sponsors</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div> <!-- /.container -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+    </div><!-- /.navbar-wrapper -->
+
+
+	<div class="container marketing">
+<!-- Example row of columns -->
+      <div class="row">
+      <img src="http://i1125.photobucket.com/albums/l589/Nye3132/UWR%20Website%20Images/UnderwaterRoboticsLogo_zpscedf9de3.png~original" style="width: absolute; height: width/4;">
+        <div class="col-lg-4">
+          <h2>The Team</h2>
+          <p>Founded in 2010, the Underwater Robotics Team (UWRT) is an emerging engineering project team at The Ohio State University. The team is comprised of a multidisciplinary group of undergraduate students interested in design, manufacturing, and engineering in the unique arena of an underwater environment. Specifically we are designing and building a Remotely Operated Vehicle (ROV) as well as an Autonomous Underwater Vechile (AUV). Our current team members are studying in the fields of mechanical engineering, aerospace engineering, electrical engineering, and computer science engineering but the team is open to students of all majors and skills.</p>
+        </div>
+        <hr width="200" align="left">
+                
+        <div class="col-lg-4">
+          <h2>Current Projects</h2>
+          <h3>Remotely Operated Vehicle (ROV)</h3>
+          <p>We are currently developing an ROV that will compete in the 2015 <a href="http://www.marinetech.org/" target="_blank">MATE Competition</a> located in Labrador, Canada. This tethered underwater robot will be controlled from the surface by the team and used to complete a variety of tasks as required by the competition.</p>
+          <h3>Autonomous Underwater Vehicle (AUV)</h3>
+          <p>We are also developing an AUV that will compete in the 2016 <a href="http://www.auvsifoundation.org/foundation/competitions/robosub/" target="_blank">Robosub Competition</a> located in San Diego, California. Currently in the design phase, our AUV is following in the footsteps of our ROV in both design and operation. The fundemental difference being the AUV will be designed to run and complete tasks independently. Our most ambitious project to-date, our team is excited to take on this challenge.</p>
+          <!--<p><a class="btn btn-primary" href="Vehicles.html" role="button">Vehicles &raquo;</a></p>-->
+       </div>
+      </div>
+
+      
+      
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Underwater Robotics at The Ohio State University &middot; <a href="Privacy.html">Privacy</a> &middot; <a href="Terms.html">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="bootstrap/js/holder/holder.js"></script>
+  </body>
+</html>
