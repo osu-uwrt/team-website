@@ -1,0 +1,13 @@
+#masthead {
+  background:#666;
+  height:120px;
+}
+#nav.affix-top {
+  position: static;
+}
+
+#nav.affix {
+  position: fixed;
+  top:0;
+  width: 100%;
+}

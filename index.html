@@ -1,82 +1,157 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Mobile Specific Metas  ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- CORE CONCRETE  ================================================== -->
-<script type="text/javascript">var BOOTSTRAP_VERSION ="bootstrap";
-	var BOOTSTRAP_JS_HEAD =1;
-	var BOOTSTRAP_CDN_ENABLE =0; var BOOTSTRAP_NAVBAR_TYPE =0; var BOOTSTRAP_LOGO_OPTION =1; var BOOTSTRAP_NAVBAR =1; var BootstrapInputFix =true;var BootstrapNavbarLineHeightFix =true;var BOOTSTRAP_EDT= 0; </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>Underwater Robotics</title>
-<meta name="description" content="" />
-<meta name="generator" content="concrete5 - 5.6.3.1" />
-<script type="text/javascript">
-var CCM_DISPATCHER_FILENAME = '/index.php';
-var CCM_CID = 1775;
-var CCM_EDIT_MODE = false;
-var CCM_ARRANGE_MODE = false;
-var CCM_IMAGE_PATH = "/concrete/images";
-var CCM_TOOLS_PATH = "/index.php/tools/required";
-var CCM_BASE_URL = "http://bootstraptheme.com";
-var CCM_REL = "";
-</script>
+  <title>Sticky Footer Navbar Template for Bootstrap</title>
 
-	  <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/concrete/css/ccm.base.css" />
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/concrete/js/jquery.js"></script>
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/concrete/js/ccm.base.js"></script>
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/bootstrap/css/bootstrap/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/bootstrap/css/bootstrap/docs.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/bootstrap/css/bootstrap/bootstrap-overwrites.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/bootstrap/css/members.css" />
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/prettify.js"></script>
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/pro_image/blocks/pro_image/templates/background_img/view.css" />
-<link rel="stylesheet" type="text/css" href="http://cdn.bootstraptheme.com/packages/pro_image/blocks/pro_image/templates/background_img/css/view.css" />
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/packages/pro_image/blocks/pro_image/templates/background_img/js/jquery.backstretch.min.js"></script>
-<!--[if gte IE 9]>
-<script src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/modernizr.js"></script>
-<![endif]-->
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>	
-	
-	<script src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/html5shiv.js"></script>
-	<script src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/respond.min.js"></script>
-    <link href="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-    <link href="/packages/bootstrap/js/common/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-    <script src="/packages/bootstrap/js/common/respond.proxy.js"></script>
-	
-<![endif]--><style>
-html, body {
-     
-    height: 100%;
-}
-</style>
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+  <!-- Nav bar never disappears -->
+  <link href="css/sticky-nav.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-<body class="bs-cover">
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
 
-<div id="HTMLBlock2228" class="HTMLBlock">
-<h1 style="text-align: center;">
-    <p><img src="Images/Sponsors/UnderwaterRoboticsLogo_zpscedf9de3.png" class="img-responsive">      </p>
-    <p><a class="btn btn-lg btn-primary" href="home.html">Dive In</a></p>
-</div><p class="lead"></p>
-	<p class="lead"></p>
-</h1>
-<script>
-    $.backstretch("Images/Misc/ocean_1920x1080_59870_zps355aa5fa.jpg");
-</script>
-          </div>
+<body>
+
+  <div id="masthead">
+    <div class="container">
+    </div>
+  </div>
+
+  <div id="nav">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">osu-uwrt</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+
+  <!-- Begin page content -->
+  <div id="content">
+    <div class="container">
+      <div class="page-header">
+        <h1>Sticky footer with fixed navbar</h1>
+      </div>
+      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
+      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+    </div>
+    <div>
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+      .<br />
+    </div>
+  </div>
+
+  <!--  Bootstrap sticky footer
+  ================================================== -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8">
+          <p class="text-muted">&copy; 2015 The Ohio State University</p>
+        </div>
+        <div class="col-xs-4">
+          <ul class="list-inline pull-right text-muted">
+            <li><a href="https://www.facebook.com/uwrt.osu"><span class="fa fa-facebook-square fa-lg"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCOyu-sdGywtYK5b141Aw_KA"><span class="fa fa-youtube-square fa-lg"></span></a></li>
+            <li><a href="https://github.com/osu-uwrt"><span class="fa fa-github-square fa-lg"></span></a></li>
+          </ul>
         </div>
       </div>
     </div>
-<script type="text/javascript" src="http://cdn.bootstraptheme.com/packages/bootstrap/js/common/app.js"></script>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <!-- Nav bar never disappears -->
+  <script src="js/sticky-nav.js"></script>
 </body>
 </html>
