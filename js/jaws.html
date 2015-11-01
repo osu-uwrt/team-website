@@ -9,17 +9,13 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>osu-uwrt</title>
+  <title>osu-uwrt | jaws</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Font Awesome CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
   <!-- Custom styles for this template -->
   <link href="css/sticky-footer-navbar.css" rel="stylesheet">
@@ -71,24 +67,53 @@
   <div id="content">
     <div class="container">
 
+      <div class="page-header">
+        <h1>Jaws</h1>
+      </div>
+
       <div class="row">
         <div class="col-xs-12 col-sm-6">
+          <img src="img/vehicles/jaws.png" alt="Jaws" class="img-responsive">
 
-          <div class="slide-renders">
-            <div><img src="img/vehicles/jaws_2.png" alt="Jaws" class="img-responsive"></div>
-            <div><img src="img/vehicles/jaws.png" alt="Jaws" class="img-responsive"></div>
-            <div><img src="img/vehicles/block-o-bot.png" alt="Jaws" class="img-responsive"></div>
-              <div><img src="img/vehicles/carbon_carmen.png" alt="Jaws" class="img-responsive"></div>
-              <div><img src="img/vehicles/buckeye_boulder.png" alt="Jaws" class="img-responsive"></div>
-          </div>
+          <table class="table table-striped table-bordered table-condensed small">
+            <tr>
+              <td>Weight</td>
+              <td>17 lbs</td>
+              <td>Controller</td>
+              <td>BeagleBone Black</td>
+            </tr>
+            <tr>
+              <td>Dimensions</td>
+              <td>22.5" x 15.5" x 9.0"</td>
+              <td>Thrusters</td>
+              <td>3x SeaBotix BTD150</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Cameras</td>
+              <td>3x USB Webcams</td>
+            </tr>
+            <tr>
+              <td>Servos</td>
+              <td>Hitec HS-422</td>
+              <td>IMU</td>
+              <td>InvenSense MPU-9150</td>
+            </tr>
+          </table>
 
+          <p class="text-justify">The 2013-2014 ROV, named Jaws, represents our move away from a traditional thruster configuration towards a low weight and low cost system. Jaws features two actuating thrusters near the dome controlled my internal servos with dynamic shaft-seals. This unique approach gives jaws total freedom to move in water while still allowing precision control via thrust vectoring algorithms.</p>
 
-        </div>
-        <div class="col-xs-12 col-sm-6">
-
-
-
-
+          <strong>Features:</strong>
+          <ul>
+            <li>2x Actuating Thrusters</li>
+            <li>Camera Pan-Tilt Mechanism</li>
+            <li>Waterjet Acrylic Slide Electronics Mount</li>
+            <li>5" Diameter x 14" Long Main Housing</li>
+            <li>Solenoid Driven Claw (9.5" Long)</li>
+            <li>Vaccum Formed Acrylic Camera Dome (0.125" Thick)</li>
+          </ul>
+          
         </div>
       </div>
 
@@ -126,12 +151,5 @@
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <!-- Nav bar never disappears -->
   <script src="js/sticky-nav.js"></script>
-
-  <!-- Slick Carousel Script (Requres jQuery)-->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/carousel.js"></script>
-
 </body>
 </html>
