@@ -263,6 +263,9 @@ header .header-content .header-content-inner p {
 .section-heading {
     margin-top: 0;
 }
+.sponsor-heading {
+    font-size: 15px;
+}
 
 .service-box {
     margin: 50px auto 0;
