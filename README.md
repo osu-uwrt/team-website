@@ -1,2 +1,1 @@
-# website
-http://go.osu.edu/uwrt
+osu-uwrt team website
