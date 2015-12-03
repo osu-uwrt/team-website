@@ -264,7 +264,9 @@ header .header-content .header-content-inner p {
     margin-top: 0;
 }
 .sponsor-heading {
+    padding-top: 30px;
     font-size: 15px;
+    font-weight: 900;
 }
 
 .service-box {
