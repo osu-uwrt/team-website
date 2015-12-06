@@ -46,6 +46,7 @@ h3{
 }
 .panel-title{
     color: #000;
+    text-align: center;
 
 }
 h4,
@@ -65,6 +66,14 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+.outreach-spacing{
+    width: 80%;
+}
+.table-center {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
 
 .bg-primary {
     background-color: #bb0000;
@@ -77,6 +86,51 @@ p {
 .bg-dark {
     color: #fff;
     background-color: #222;
+}
+.padded-render{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 500px;
+}
+.image-reduced {
+    height: auto;
+    weight: auto;
+    max-width: 76%;
+
+}
+.post-container {
+    margin: 20px 20px 0 0;
+    border: 2px solid #333;
+    overflow: auto
+}
+.component-image-left img{
+    float: left;
+    max-width: 250px;
+    height: auto;
+    display: block;
+
+}
+.component-image-right{
+    float: right;
+    display: block;
+    width: auto;
+    max-height: 300px;
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+.post-title {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -262,6 +316,17 @@ header .header-content .header-content-inner p {
 
 .section-heading {
     margin-top: 0;
+    font-weight: 600;
+}
+.sponsor-heading {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 900;
+}
+.vehicle-heading {
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .service-box {
