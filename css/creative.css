@@ -103,7 +103,7 @@ p {
 }
 .post-container {
     margin: 20px 20px 0 0;
-    border: 2px solid #333;
+    border: 0px solid #333;
     overflow: auto
 }
 .component-image-left img{
