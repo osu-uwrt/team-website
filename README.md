@@ -11,3 +11,5 @@ The Ohio State University
 <img src="http://underwaterrov.org.ohio-state.edu/img/renders/jaws.png" height="80" />
 <img src="http://underwaterrov.org.ohio-state.edu/img/renders/jaws_2.png" height="80" />
 <img src="http://underwaterrov.org.ohio-state.edu/img/renders/riptide.png" height="80" />
+
+[Live Site](http://go.osu.edu/uwrt) | [GitHub Pages](http://osu-uwrt.github.io/) | [License](LICENSE)
